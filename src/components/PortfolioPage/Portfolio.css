@@ -1,0 +1,31 @@
+.portfolio-container {
+  background-color: #fff;
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.portfolio-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+
+.portfolio-wrapper h1 {
+  font-size: 50px;
+  margin: 20px 0 50px;
+  color: #292930;
+}
+
+.portfolio-wrapper h1 span {
+  color: #5956e9;
+  position: relative;
+}
+
+.portfolio-project-container {
+  padding: 0 30px;
+}

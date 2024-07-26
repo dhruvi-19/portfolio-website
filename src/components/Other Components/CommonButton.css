@@ -1,0 +1,20 @@
+.common-button {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #5956e9;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  padding: 0 50px;
+  border-radius: 10px;
+  border: none;
+}
+
+.common-button:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-out 0s;
+  color: #292930;
+  background-color: #ffd109;
+  transition: all 0.3s ease-out 0s;
+}

@@ -1,0 +1,48 @@
+.resume-title {
+  font-size: 22px;
+  color: #292930;
+  margin-bottom: 5px;
+  max-width: 400px;
+}
+
+.resume-experince-education {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.resume-details-list {
+  padding-left: 25px;
+  position: relative;
+  text-align: left;
+  text-align: justify;
+}
+
+.resume-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  background-color: #ffd109;
+  position: absolute;
+  left: 0;
+  top: 28px;
+}
+
+.resume-details-list h3 {
+  font-size: 22px;
+  color: #292930;
+  margin-bottom: 5px;
+  max-width: 400px;
+}
+
+.resume-details-list small {
+  color: #8a90a2;
+}
+
+.resume-details-list p {
+  margin-top: 15px;
+  color: #292930;
+  line-height: 26px;
+  width: 100%;
+  max-width: 400px;
+}

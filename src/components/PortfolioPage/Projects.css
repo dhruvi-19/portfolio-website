@@ -1,0 +1,82 @@
+.portfolio-project-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.project-details {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.project-details h2 {
+  padding-top: 0;
+  font-size: 30px;
+  color: var(--text-color-2);
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.project-details p {
+  font-size: 15px;
+  color: #8a90a2;
+  max-width: 470px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.project-details ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 0;
+}
+
+.project-details ul li {
+  font-size: 18px;
+  color: #8a90a2;
+  font-weight: 400;
+  display: flex;
+  gap: 10px;
+}
+
+.project-details ul li strong {
+  color: #292930;
+}
+
+.carousel .control-dots .dot {
+  background: #7372b3;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 7px;
+  opacity: 0.2;
+}
+
+.carousel .control-dots .dot.selected {
+  opacity: 1;
+  background: #eae9e2;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-project-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel-container,
+  .project-details {
+    width: 100%;
+  }
+}
