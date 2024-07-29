@@ -44,5 +44,12 @@
   color: #292930;
   line-height: 26px;
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
+  /* max-width: 400px; */
+}
+
+@media screen and (max-width: 992px) {
+  .resume-details-list p {
+    max-width: 100%;
+  }
 }

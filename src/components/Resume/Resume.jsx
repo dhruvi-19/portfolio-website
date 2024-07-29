@@ -8,7 +8,7 @@ import lampShape from "../../assets/lamp.png";
 function Resume() {
   const experince = [
     {
-      title: "Software Developer",
+      title: "Software Developer Trainee",
       duration: "July 2024 - Present | Prometteur Solutions Pvt Ltd",
       discription:
         "Responsible for developing, and implementing user-friendly and responsive web applications. My primary focus is on creating engaging user experiences by using a combination of ReactJS, NextJS, and other latest Frontend technologies while also working closely with designers and back-end developers to ensure seamless integration of web applications.",
@@ -38,7 +38,7 @@ function Resume() {
 
   return (
     <div className="resume-container" id="resume">
-      <img src={lampShape} alt="Lamp" />
+      {/* <img src={lampShape} alt="Lamp" /> */}
       <div className="resume-wrapper">
         <Subtitle>Development Journey</Subtitle>
         <h1>Resume</h1>

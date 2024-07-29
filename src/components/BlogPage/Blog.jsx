@@ -37,7 +37,7 @@ function Blog() {
         <span className="blog-circle-blue"></span>
       </div>
       <div className="blog-wrapper">
-        <Subtitle>Blog & Article</Subtitle>
+        <Subtitle>Blog</Subtitle>
         <h1>
           Recent{" "}
           <span>

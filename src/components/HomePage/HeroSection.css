@@ -72,14 +72,14 @@
   line-height: 34px;
   font-size: 19px;
   font-weight: 400;
-  width: 100%;
+  width: 500px;
   max-width: 450px;
   margin-bottom: 40px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   .hero-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }

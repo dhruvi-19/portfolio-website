@@ -3,7 +3,7 @@ import HeroSection from "./HeroSection";
 
 function Home() {
   return (
-    <div className="home-container">
+    <div className="home-container" id="home">
       <Navbar />
       <HeroSection />
     </div>

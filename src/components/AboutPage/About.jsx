@@ -35,10 +35,10 @@ function About() {
               </p>
 
               <ul>
-                <li>
+                {/* <li>
                   <strong>Expertise: </strong>
                   Software Development
-                </li>
+                </li> */}
                 <li>
                   <strong>Email: </strong>
                   dbhuva1911@gmail.com

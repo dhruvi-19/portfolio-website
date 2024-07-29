@@ -90,3 +90,12 @@
   left: 70px;
   background-color: #ffd109;
 }
+
+@media screen and (max-width: 1250px) {
+  .blog-card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

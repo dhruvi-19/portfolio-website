@@ -37,7 +37,7 @@
 }
 
 .resume-block {
-  width: 50%;
+  width: 100%;
   min-width: 400px;
   display: flex;
   flex-direction: column;
@@ -50,4 +50,15 @@
   padding-left: 25px;
   text-decoration: underline;
   text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+  .resume-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resume-block {
+    width: 100%;
+  }
 }

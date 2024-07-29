@@ -1,5 +1,5 @@
 .about-container {
-  background-color: #fff;
+  background-color: #f7f8fd;
   padding: 120px 30px;
   display: flex;
   justify-content: center;
@@ -124,4 +124,59 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  .about-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-socials {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: flex-start;
+  }
+
+  .about-socials img {
+    height: 33px;
+    width: 34px;
+  }
+
+  .about-orbit {
+    height: 1300px;
+    width: 1300px;
+  }
+
+  .about-circle {
+    top: 325px;
+  }
+
+  .about-left {
+    width: 100%;
+  }
+
+  .about-left img {
+    justify-content: center;
+  }
+
+  .about-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

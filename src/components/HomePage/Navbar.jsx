@@ -1,17 +1,31 @@
 import "./Navbar.css";
 import CommonButton from "../Other Components/CommonButton";
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
+import menu from "../../assets/menu.svg";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const openMenu = () => {
+    setMenuOpen(true);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <Router>
       <div className="navContainer">
-        <a href="/" className="logo-link" style={{ scrollBehavior: "smooth" }}>
-          {/* <img src={dbLogo} alt="DB" className="db-logo" /> */}
+        <a
+          href="#home"
+          className="logo-link"
+          style={{ scrollBehavior: "smooth" }}
+        >
+          {/* <img src={DhruviLogo} alt="Dhruvi" /> */}
           <h1 className="logo-name">
             <span className="logo--of-d">DB</span>
-            {/* <span className="logo-of-b"></span> */}
           </h1>
         </a>
 
@@ -30,55 +44,63 @@ function Navbar() {
           </a>
         </div>
 
-        <div>
+        <div className="nav-button">
           <a href="#contact" style={{ scrollBehavior: "smooth" }}>
             <CommonButton>Let's Talk</CommonButton>
           </a>
         </div>
+
+        <button className="header-menu" onClick={openMenu}>
+          <img src={menu} alt="menu" />
+        </button>
+
+        {menuOpen && (
+          <div className={`menu-container ${menuOpen ? "open" : ""}`}>
+            <div className="menu-close-button" onClick={closeMenu}>
+              ×
+            </div>
+            <div className="menu-link-container">
+              <a
+                href="#home"
+                style={{ scrollBehavior: "smooth" }}
+                onClick={closeMenu}
+              >
+                Home
+              </a>
+              <a
+                href="#portfolio"
+                style={{ scrollBehavior: "smooth" }}
+                onClick={closeMenu}
+              >
+                Portfolio
+              </a>
+              <a
+                href="#about"
+                style={{ scrollBehavior: "smooth" }}
+                onClick={closeMenu}
+              >
+                About
+              </a>
+              <a
+                href="#resume"
+                style={{ scrollBehavior: "smooth" }}
+                onClick={closeMenu}
+              >
+                Resume
+              </a>
+              <a
+                href="#blog"
+                style={{ scrollBehavior: "smooth" }}
+                onClick={closeMenu}
+              >
+                Blog
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </Router>
   );
 }
 
 export default Navbar;
-
-// function Navbar() {
-//   return (
-//     <Router>
-//       <div className="navContainer">
-//         <Link to="/" className="logo-link">
-//           {/* <img src={dbLogo} alt="DB" className="db-logo" /> */}
-//           <h1 className="logo-name">
-//             <span className="logo--of-d">DB</span>
-//             {/* <span className="logo-of-b"></span> */}
-//           </h1>
-//         </Link>
-
-//         <div className="link-container">
-//           <Link to="/">Home</Link>
-//           <Link to="/portfolio">Portfolio</Link>
-//           <Link to="/about">About</Link>
-//           <Link to="/resume">Resume</Link>
-//           <Link to="/blog">Blog</Link>
-//         </div>
-
-//         <div>
-//           <Link to="/contact">
-//             <CommonButton>Let's Talk</CommonButton>
-//           </Link>
-//         </div>
-//       </div>
-
-//       <Routes>
-//         <Route exact path="/" component={Home} />
-//         <Route path="/portfolio" component={Portfolio} />
-//         <Route path="/about" component={About} />
-//         <Route path="/resume" component={Resume} />
-//         <Route path="/blog" component={Blog} />
-//         <Route path="/contact" component={ContactPage} />
-//       </Routes>
-//     </Router>
-//   );
-// }
-
-// export default Navbar;

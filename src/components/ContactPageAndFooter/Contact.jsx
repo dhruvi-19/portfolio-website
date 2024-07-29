@@ -10,13 +10,13 @@ function ContactPage() {
         <div>
           <Subtitle>Contact me</Subtitle>
         </div>
-        <h1>
-          Let's Build something together{" "}
+        {/* <h1>
+          Let's Build something Together.{" "}
           <img src={handshake} alt="handshake"></img>
-        </h1>
+        </h1> */}
         <p className="contact-para">
-          If you want to know more about me or my work, or if you would just
-          like to say hello, send me a message. I'd love to hear from you.
+          What’s next? Feel free to reach out to me if you are looking for a
+          developer, have a query, or simply want to connect.
         </p>
 
         <form>
