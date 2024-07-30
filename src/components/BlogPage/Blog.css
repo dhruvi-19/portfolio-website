@@ -21,16 +21,8 @@
 }
 
 .blog-wrapper span {
-  color: #5956e9;
+  color: #1d3557;
   position: relative;
-}
-
-.blog-wrapper h1 span .blog-underline {
-  z-index: -1;
-  position: absolute;
-  bottom: 4px;
-  left: -5px;
-  border-bottom: 9px solid #ffd109;
 }
 
 .blog-card-box {
@@ -88,7 +80,7 @@
   z-index: -1;
   top: 50px;
   left: 70px;
-  background-color: #ffd109;
+  background-color: #fd97c1;
 }
 
 @media screen and (max-width: 1250px) {

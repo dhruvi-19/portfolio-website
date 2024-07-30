@@ -19,7 +19,7 @@ function HeroSection() {
         <p className="hero-second-para">
           Transforming complex ideas into elegant and scalable web solutions.
         </p>
-        <a href="#portfolio">
+        <a href="#portfolio" className="hero-button">
           <CommonButton>View My Work</CommonButton>
         </a>
 

@@ -43,7 +43,7 @@
   height: 40px;
   border-radius: 10px;
   line-height: 40px;
-  color: #5956e9;
+  color: #1d3557;
   background-color: rgba(89, 86, 233, 0.1);
 }
 
@@ -87,5 +87,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .blog-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

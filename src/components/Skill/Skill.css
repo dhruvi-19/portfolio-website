@@ -70,6 +70,10 @@
   text-decoration: none;
 }
 
+.skill-image-container a p {
+  color: #f8f8f8;
+}
+
 .skill-image-container img {
   transition: all 0.4s ease-in-out;
   cursor: pointer;

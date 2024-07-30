@@ -2,8 +2,8 @@ import "./Blog.css";
 import Subtitle from "../Other Components/Subtitle";
 import BlogCard from "../Other Components/BlogCard";
 
-import journeyFromFrontToFull from "../../assets/My_Journey_from_Frontend_Developer_to_Full_Stack_Developer.png";
-import javascriptEngine from "../../assets/hWhat_is_a_JavaScript_Engine.png";
+import journeyFromFrontToFull from "../../assets/development-journey.avif";
+import javascriptEngine from "../../assets/js-engine.jpeg";
 
 function Blog() {
   const Blogs = [

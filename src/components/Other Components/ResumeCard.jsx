@@ -5,8 +5,10 @@ const ResumeCard = ({ prop }) => {
     return (
       <div className="resume-experince-education">
         <div className="resume-details-list">
-          <span className="resume-circle"></span>
+          {/* <span className="resume-circle"></span> */}
+
           <h3 className="resume-title">{title}</h3>
+
           <small>{duration}</small>
           <p>{discription}</p>
         </div>

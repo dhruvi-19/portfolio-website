@@ -3,11 +3,16 @@
   top: 0;
   left: 0; */
   /* width: 98%; */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: #fffffff1;
   padding: 0px 30px;
+  height: 90px;
 }
 
 .logo-link h1 {
@@ -15,7 +20,7 @@
 }
 
 .logo--of-d {
-  color: #292930;
+  color: var(--app-blue);
 }
 
 .db-logo {
@@ -57,7 +62,7 @@
 
 .link-container li {
   padding: 20px 0;
-  transition: #5956e9 0.3s ease-out 0s;
+  transition: #1d3557 0.3s ease-out 0s;
   margin-right: 30px;
 }
 
@@ -67,7 +72,7 @@
   width: 100%;
   height: 4px;
   border-radius: 4px;
-  background-color: #5956e9;
+  background-color: #1d3557;
   bottom: 0;
   left: 0;
   transform-origin: right;
@@ -97,23 +102,69 @@
   display: flex;
 }
 
+@keyframes slideInFromTopRight {
+  from {
+    transform: translate(100%, -100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToTopRight {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(100%, -100%);
+    opacity: 0;
+  }
+}
+
+.menu-container {
+  display: none;
+}
+
+.menu-container.open {
+  display: flex;
+  animation: slideInFromTopRight 0.5s forwards;
+}
+
+.menu-container.closing {
+  animation: slideOutToTopRight 0.5s forwards;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 992px) {
+  .navContainer {
+    height: 70px;
+  }
+  .navContainer h1 {
+    padding-top: 12px;
+    font-size: 40px;
+  }
   .header-menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    background-color: #fff;
+    padding: 0;
+    margin-top: 0;
     height: 57px;
     width: 57px;
-    padding: 0;
-    background-color: #fff;
-    border: none;
     border-radius: 10px;
     z-index: 2;
   }
 
   .header-menu img {
-    height: 28px;
-    width: 28px;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    z-index: 2;
   }
 
   .link-container {
@@ -130,7 +181,7 @@
     height: 100vh;
     max-height: 100vh;
     width: 100%;
-    background-color: #ffd109;
+    background-color: var(--app-beinj);
     position: fixed;
     z-index: 999;
     transition: all 0.45s ease-in-out;
@@ -144,7 +195,7 @@
   }
 
   .menu-close-button {
-    font-size: 60px;
+    font-size: 50px;
     position: absolute;
     top: 10px;
     right: 30px;
@@ -159,7 +210,7 @@
 
   .menu-link-container a {
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     text-transform: uppercase;
     font-weight: 500;
     color: #292930;

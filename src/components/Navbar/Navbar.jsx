@@ -6,13 +6,18 @@ import menu from "../../assets/menu.svg";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [closing, setClosing] = useState(false);
 
   const openMenu = () => {
+    setClosing(false);
     setMenuOpen(true);
   };
 
   const closeMenu = () => {
-    setMenuOpen(false);
+    setClosing(true);
+    setTimeout(() => {
+      setMenuOpen(false);
+    }, 500);
   };
 
   return (
@@ -23,7 +28,6 @@ function Navbar() {
           className="logo-link"
           style={{ scrollBehavior: "smooth" }}
         >
-          {/* <img src={DhruviLogo} alt="Dhruvi" /> */}
           <h1 className="logo-name">
             <span className="logo--of-d">DB</span>
           </h1>
@@ -55,7 +59,11 @@ function Navbar() {
         </button>
 
         {menuOpen && (
-          <div className={`menu-container ${menuOpen ? "open" : ""}`}>
+          <div
+            className={`menu-container ${menuOpen ? "open" : ""} ${
+              closing ? "closing" : ""
+            }`}
+          >
             <div className="menu-close-button" onClick={closeMenu}>
               ×
             </div>

@@ -34,6 +34,7 @@ function Skill() {
               height="80px"
               width="80px"
             />
+            <p>HTML</p>
           </a>
           <a href="https://en.wikipedia.org/wiki/CSS">
             <img
@@ -43,6 +44,7 @@ function Skill() {
               height="80px"
               width="80px"
             />
+            <p>CSS</p>
           </a>
           <a href="https://en.wikipedia.org/wiki/Tailwind_CSS">
             <img
@@ -52,6 +54,7 @@ function Skill() {
               height="80px"
               width="80px"
             />
+            <p>CSS Tailwind</p>
           </a>
           <a href="https://en.wikipedia.org/wiki/JavaScript">
             <img
@@ -61,6 +64,7 @@ function Skill() {
               height="80px"
               width="80px"
             />
+            <p>Javascript</p>
           </a>
           <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)">
             <img
@@ -70,6 +74,7 @@ function Skill() {
               height="80px"
               width="80px"
             />
+            <p>React.js</p>
           </a>
           <a href="https://en.wikipedia.org/wiki/Node.js">
             <img
@@ -79,6 +84,7 @@ function Skill() {
               height="80px"
               width="80px"
             />
+            <p>Node.js</p>
           </a>
           <a href="https://en.wikipedia.org/wiki/MongoDB">
             <img
@@ -88,6 +94,7 @@ function Skill() {
               height="80px"
               width="80px"
             />
+            <p>MongoDB</p>
           </a>
           <a href="https://en.wikipedia.org/wiki/MySQL">
             <img
@@ -97,6 +104,7 @@ function Skill() {
               height="80px"
               width="80px"
             />
+            <p>MySQL</p>
           </a>
           <a href="https://en.wikipedia.org/wiki/Git">
             <img
@@ -106,6 +114,7 @@ function Skill() {
               height="80px"
               width="80px"
             />
+            <p>Git</p>
           </a>
         </div>
       </div>
