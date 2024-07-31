@@ -1,7 +1,6 @@
 .hero-wrapper {
   width: 90%;
-  padding: 0 60px;
-  padding-bottom: 80px;
+  padding: 0 60px 80px 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -124,7 +123,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  animation-delay: 1s; /* Adjust delay if you want them to appear sequentially */
+  animation-delay: 1s;
 }
 
 .social-link-logo-with-name img {
@@ -146,12 +145,38 @@
 .hero-right-pic {
   opacity: 0;
   animation: zoomInBackground 1s forwards;
-  animation-delay: 0.2s; /* Adjust delay as needed */
+  animation-delay: 0.2s;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 900px) {
   .hero-wrapper {
     display: flex;
     flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-wrapper {
+    padding: 0 30px 60px 30px;
+  }
+  .hero-right-pic {
+    width: 440px;
+    height: 440px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .hero-right-pic {
+    width: 350px;
+    height: 350px;
+  }
+
+  .hero-second-para {
+    max-width: 350px;
+  }
+
+  .hero-left h1 {
+    font-size: 45px;
   }
 }

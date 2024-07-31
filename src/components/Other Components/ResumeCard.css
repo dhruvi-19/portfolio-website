@@ -63,3 +63,9 @@
     padding: 10px 50px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .resume-details-list {
+    padding: 10px 30px;
+  }
+}
