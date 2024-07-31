@@ -105,4 +105,8 @@
   .project-details p {
     max-width: 98%;
   }
+
+  .project-details {
+    padding: 0;
+  }
 }
